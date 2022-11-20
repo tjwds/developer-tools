@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+#eventTarget {
+    width: 300px;
+    height: 300px;
+    background: lightyellow;
+    border: 1px solid black;
+}
+
+#log {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 2rem;
+    height: calc(99vh - 500px);
+    overflow: scroll;
+}
