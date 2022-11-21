@@ -6,38 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS media feature checker</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-
+      @font-face {
+        font-family: "Fira Code";
+        /* See license at ../FiraCode-license-OFL.txt */
+        src: url("../FiraCode-VariableFont_wght.ttf") format("truetype");
+      }
       body {
+        font-family: "Fira Code", monospace;
         font-size: 16px;
-        max-width: 800px;
-        margin: 36px auto 0;
-        padding: 0 12px 12px;
-        background: #effdff;
-        color: #453b4d;
+        color: #c7e0e8;
+        background: #0e0215;
+        box-sizing: border-box;
+        padding: 2em;
       }
-
-      h1 {
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        margin-bottom: 36px;
+      a {
+        color: #00b7ff;
       }
-
-      div {
-        border: 1px solid black;
-        float: left;
-        padding: 14px;
-        min-height: 20px;
-        margin: -0.5px;
-        background: #effdff;
+      a:visited {
+        color: #ca83f7;
+      }
+      #container {
+        max-width: 600px;
+        margin: 0 auto;
       }
 
       pre {
         display: inline;
-        background: #f7e9ec;
-        color: #880303;
-        padding: 5px;
+        border: 1px solid currentColor;
+        padding: 0.2rem;
       }
+
+      div {
+        margin-bottom: 0.5rem;
+      }
+      /* code {
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        border: 1px solid;
+      } */
 
       #print,
       #screen,
@@ -700,6 +706,7 @@
     </style>
   </head>
   <body>
+    <a href="../">← back</a>
     <h1>What does this browser report for media features?</h1>
     <div id="types">
       My media type is <span id="print">print</span

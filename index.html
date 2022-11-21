@@ -5,12 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe's developer tools</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Fira Code';
+            /* See license at ./FiraCode-license-OFL.txt */
+            src: url('./FiraCode-VariableFont_wght.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Fira Code', monospace;
+            font-size: 16px;
+            color: #c7e0e8;
+            background: #0e0215;
+            box-sizing: border-box;
+            padding: 2em;
+        }
+        a {
+            color: #00b7ff;
+        }
+        a:visited {
+            color: #ca83f7;
+        }
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Joe's developer tools</h1>
-    <ul>
-        <li><a href="./event">What order does this browser invoke JavaScript <b>events</b> in?</a></li>
-        <li><a href="./media">What values does this browser report for CSS <b>media</b> queries?</a></li>
-    </ul>
+    <div id="container">
+        <h1>Joe's developer tools</h1>
+        <ul>
+            <li><a href="./event">What order does this browser invoke JavaScript <b>events</b> in?</a></li>
+            <li><a href="./media">What values does this browser report for CSS <b>media</b> queries?</a></li>
+        </ul>
+    </div>
 </body>
 </html>
